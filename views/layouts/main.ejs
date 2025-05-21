@@ -1,32 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="stylesheet" href="/style.css">
+  <%- include('../partials/header') %>
 </head>
 <body>
-  <div class="sidebar">
-    <header>
-      <img src="/logo.jpeg" alt="부잣집 로고" class="logo">
-    </header>
-    <nav>
-      <ul>
-        <li><a href="/" class="<%= activePage === 'home' ? 'active' : '' %>">Home</a></li>
-        <li><a href="/about" class="<%= activePage === 'about' ? 'active' : '' %>">About</a></li>
-        <li><a href="/order" class="<%= activePage === 'order' ? 'active' : '' %>">Order</a></li>
-      </ul>
-    </nav>
-    <footer class="footer">
-      <button class="login-button">Sign in</button>
-      <span style="margin-top:1rem;">&copy; 2025 Bujajjib<br>All Rights Reserved.</span>
-    </footer>
-  </div>
+  <%- include('../partials/sidebar') %>
   <main>
     <%- body %>
   </main>

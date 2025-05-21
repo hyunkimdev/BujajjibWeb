@@ -1,0 +1,13 @@
+<div class="sidebar">
+  <header>
+    <img src="/logo.jpeg" alt="부잣집 로고" class="logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/" class="<%= activePage === 'home' ? 'active' : '' %>">Home</a></li>
+      <li><a href="/about" class="<%= activePage === 'about' ? 'active' : '' %>">About</a></li>
+      <li><a href="/order" class="<%= activePage === 'order' ? 'active' : '' %>">Order</a></li>
+    </ul>
+  </nav>
+  <%- include('footer') %>
+</div> 
